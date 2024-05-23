@@ -1,1 +1,3 @@
 # synthoftheday
+
+Min synt-sida

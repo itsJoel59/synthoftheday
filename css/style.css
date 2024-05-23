@@ -1,0 +1,8 @@
+header{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.splide .splide__slide img{
+    width: 100%;
+}

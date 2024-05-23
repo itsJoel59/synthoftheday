@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Synth of the day!</title>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link rel="stylesheet" href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <div class="wrapper">
+        <header>
+                <div class="header">
+                    <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                              <li class="splide__slide">
+                                <img src="https://source.unsplash.com/random/800x500/?synth" alt="">
+                              </li>
+                              <li class="splide__slide">
+                                <img src="https://source.unsplash.com/random/800x500/?synths" alt="">
+                              </li>
+                              <li class="splide__slide">
+                                <img src="https://source.unsplash.com/random/800x500/?synthfreak" alt="">
+                              </li>
+                              <li class="splide__slide">
+                                <img src="https://source.unsplash.com/random/800x500/?soundwaves" alt="">
+                              </li>
+                              <li class="splide__slide">
+                                <img src="https://source.unsplash.com/random/800x500/?keyboard" alt="">
+                              </li>
+                              <li class="splide__slide">
+                                <img src="https://source.unsplash.com/random/800x500/?synth meme" alt="">
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </header>
     
+        <main>
+            <div class="main">
+
+            </div>
+        </main>
+    
+        <footer>
+            <div class="footer">
+
+            </div>
+        </footer>
+    </div>
+    <script>
+        // DOM script init
+        new Splide( '.splide', {
+          speed: 3000,
+          padding: '20%',
+          flickMaxPages: number = 6,
+          autoplay: true,
+          type: 'loop'
+        }).mount();
+      </script>
 </body>
 </html>
