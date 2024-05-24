@@ -12,14 +12,28 @@ body{
     grid-auto-rows: auto;
 
 }
+.wrapper header{
+    grid-column: 1 / span 5;
+}
+main{
+    grid-column: 1 / span 5;
+    grid-row: 3;
+    margin-top: 50px;
+}
 
-header.header{
+body .wrapper header .header{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: auto;
 }
-header.header.title{
-    grid-column: 3 / span 1;
+.header .title{
+    grid-column: 1 / span 5;
+    justify-content: space-around;
+    text-align: center;
+}
+.header .splide{
+    grid-column: 1 / span 5;
+    grid-row: 2;
 }
 
 .splide .splide__track{
@@ -31,7 +45,63 @@ header.header.title{
     width: 100%;
 }
 
+main .buttoncompare{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+}
+.buttoncompare button{
+    grid-column: 3 / span 1;
+    grid-row: 4;
+    align-self: center;
+}
+
+main .synths{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: center;
+    align-items: flex-start;
+}
+
+.juno{
+    width: 250px;
+}
+
+.minilogue{
+    width: 250px;
+}
+
+.ob6{
+    width: 250px;
+}
+
+.synthname{
+    text-align: center;
+}
+.description{
+    width: 250px;
+}
+
 .synthimage{
-    width: 300px;
+    width: 250px;
     border-radius: 50%;
+}
+
+footer{
+    grid-column: 1 / span 5;
+    grid-row: 5;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: center;
+}
+
+.tipoftheday{
+    width: 200px;
+}
+
+ul
+li{
+    list-style: none;
 }
